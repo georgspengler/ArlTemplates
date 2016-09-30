@@ -156,6 +156,34 @@
 			]
 		},
 		{
+			"name" : "Queueable Class",
+			"file_name" : "QueueableClass.cls",
+			"description" : "A class implementing the Queueable interface",
+			"author" : "Arlanis Reply AG",
+			"params" : [
+				{
+					"name" : "api_name",
+					"description" : "Class API Name",
+					"default" : "ArlQueMyClass"
+				},
+				{
+					"name" : "base_name",
+					"description" : "Class Base Name",
+					"default" : "MyClass"
+				},
+				{
+					"name" : "creating_user",
+					"description" : "User Initials",
+					"default" : "xxx"
+				},
+				{
+					"name" : "release_date",
+					"description" : "Release Date",
+					"default" : "yyyy-mm-dd"
+				}
+			]
+		},
+		{
 			"name" : "Enum Class",
 			"file_name" : "EnumClass.cls",
 			"description" : "An enum with no specific properties",
@@ -266,11 +294,6 @@
 					"default" : "MyClass"
 				},
 				{
-					"name" : "factory_name",
-					"description" : "Data Factory Class",
-					"default" : "ArlClsUnitTestDataFactory"
-				},
-				{
 					"name" : "creating_user",
 					"description" : "User Initials",
 					"default" : "xxx"
@@ -284,7 +307,7 @@
 		},
 		{
 			"name" : "Controller Unit Test",
-			"file_name" : "UnitTest.cls",
+			"file_name" : "UnitTestVisualforce.cls",
 			"description" : "A unit test template for VIsualforce controllers",
 			"author" : "Arlanis Reply AG",
 			"params" : [
@@ -304,11 +327,6 @@
 					"default" : "MyPage"
 				},
 				{
-					"name" : "factory_name",
-					"description" : "Data Factory Class",
-					"default" : "ArlClsUnitTestDataFactory"
-				},
-				{
 					"name" : "creating_user",
 					"description" : "User Initials",
 					"default" : "xxx"
@@ -321,7 +339,7 @@
 			]
 		},
 		{
-			"name" : "Unit Test",
+			"name" : "Custom Class Unit Test",
 			"file_name" : "UnitTest.cls",
 			"description" : "A class for implementing unit tests",
 			"author" : "Arlanis Reply AG",
@@ -342,11 +360,6 @@
 					"default" : "MyClass"
 				},
 				{
-					"name" : "factory_name",
-					"description" : "Data Factory Class",
-					"default" : "ArlClsUnitTestDataFactory"
-				},
-				{
 					"name" : "creating_user",
 					"description" : "User Initials",
 					"default" : "xxx"
@@ -360,7 +373,7 @@
 		},
 		{
 			"name" : "Trigger Unit Test",
-			"file_name" : "UnitTest.cls",
+			"file_name" : "UnitTestTrigger.cls",
 			"description" : "A unit test template for triggers",
 			"author" : "Arlanis Reply AG",
 			"params" : [
@@ -380,9 +393,9 @@
 					"default" : "MyObject_c"
 				},
 				{
-					"name" : "factory_name",
-					"description" : "Data Factory Class",
-					"default" : "ArlClsUnitTestDataFactory"
+					"name" : "object_name",
+					"description" : "Triggered Object",
+					"default" : "MyObject__c"
 				},
 				{
 					"name" : "creating_user",
@@ -397,7 +410,139 @@
 			]
 		},
 		{
-			"name" : "Unit Test Data Factory",
+			"name" : "Unit Test Data (using ArlanisReply Namespace)",
+			"file_name" : "UnitTestDataFactory_managed.cls",
+			"description" : "A data factory class for unit tests",
+			"author" : "Arlanis Reply AG",
+			"params" : [
+				{
+					"name" : "api_name",
+					"description" : "Class API Name",
+					"default" : "ArlUtdObject_c"
+				},
+				{
+					"name" : "base_name",
+					"description" : "Class Base Name",
+					"default" : "MyObject_c"
+				},
+				{
+					"name" : "object_name",
+					"description" : "Triggered Object",
+					"default" : "MyObject__c"
+				},
+				{
+					"name" : "creating_user",
+					"description" : "User Initials",
+					"default" : "xxx"
+				},
+				{
+					"name" : "release_date",
+					"description" : "Release Date",
+					"default" : "yyyy-mm-dd"
+				}
+			]
+		},
+		{
+			"name" : "Unit Test Setting (using ArlanisReply Namespace)",
+			"file_name" : "UnitTestSettingsFactory_managed.cls",
+			"description" : "A data factory class for unit tests",
+			"author" : "Arlanis Reply AG",
+			"params" : [
+				{
+					"name" : "api_name",
+					"description" : "Class API Name",
+					"default" : "ArlUtsObject_c"
+				},
+				{
+					"name" : "base_name",
+					"description" : "Class Base Name",
+					"default" : "MyObject_c"
+				},
+				{
+					"name" : "object_name",
+					"description" : "Triggered Object",
+					"default" : "MyObject__c"
+				},
+				{
+					"name" : "creating_user",
+					"description" : "User Initials",
+					"default" : "xxx"
+				},
+				{
+					"name" : "release_date",
+					"description" : "Release Date",
+					"default" : "yyyy-mm-dd"
+				}
+			]
+		},
+		{
+			"name" : "Unit Test Data (without using ArlanisReply Namespace)",
+			"file_name" : "UnitTestDataFactory_unmanaged.cls",
+			"description" : "A data factory class for unit tests",
+			"author" : "Arlanis Reply AG",
+			"params" : [
+				{
+					"name" : "api_name",
+					"description" : "Class API Name",
+					"default" : "ArlUtdObject_c"
+				},
+				{
+					"name" : "base_name",
+					"description" : "Class Base Name",
+					"default" : "MyObject_c"
+				},
+				{
+					"name" : "object_name",
+					"description" : "Triggered Object",
+					"default" : "MyObject__c"
+				},
+				{
+					"name" : "creating_user",
+					"description" : "User Initials",
+					"default" : "xxx"
+				},
+				{
+					"name" : "release_date",
+					"description" : "Release Date",
+					"default" : "yyyy-mm-dd"
+				}
+			]
+		},
+		{
+			"name" : "Unit Test Setting (without using ArlanisReply Namespace)",
+			"file_name" : "UnitTestSettingsFactory_unmanaged.cls",
+			"description" : "A data factory class for unit tests",
+			"author" : "Arlanis Reply AG",
+			"params" : [
+				{
+					"name" : "api_name",
+					"description" : "Class API Name",
+					"default" : "ArlUtsObject_c"
+				},
+				{
+					"name" : "base_name",
+					"description" : "Class Base Name",
+					"default" : "MyObject_c"
+				},
+				{
+					"name" : "object_name",
+					"description" : "Triggered Object",
+					"default" : "MyObject__c"
+				},
+				{
+					"name" : "creating_user",
+					"description" : "User Initials",
+					"default" : "xxx"
+				},
+				{
+					"name" : "release_date",
+					"description" : "Release Date",
+					"default" : "yyyy-mm-dd"
+				}
+			]
+		},
+		{
+			"name" : "Unit Test Data Factory (deprecated)",
 			"file_name" : "UnitTestDataFactory.cls",
 			"description" : "A data factory class for unit tests",
 			"author" : "Arlanis Reply AG",

@@ -18,10 +18,6 @@
 private class {{ api_name }} {
 	
 	
-	// the common data factory for the unit tests
-	private static final {{ factory_name }} DATA = {{ factory_name }}.instance();
-	
-	
 	@TestSetup 
 	static void initTestData() {
 		// TODO initialize test data used by all test methods within this test class

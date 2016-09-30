@@ -27,9 +27,14 @@ private class {{ api_name }} {
 	// unit test for {{ class_prefix }}{{ base_name }}
 	@IsTest(SeeAllData=false)
 	static void test_{{ class_prefix }}{{ base_name }}() {
+		{{ base_name }}Wrapper testWrapper = null; // <ChildType>{{ base_name }}Wrapper.get<ChildType>{{ base_name }}Wrapper(true, 0);
 		// TODO initialize test data only used by this test method
+		{{ object_name }} testObj = testWrapper.getSObject();
 		Test.startTest();
-		// TODO implement test logic
+		insert testObj;
+		update testObj;
+		delete testObj;
+		undelete testObj;
 		Test.stopTest();
 		// TODO perform assertions
 	}

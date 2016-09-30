@@ -28,6 +28,8 @@ private class {{ api_name }} {
 	@IsTest(SeeAllData=false)
 	static void test_{{ class_prefix }}{{ base_name }}() {
 		// TODO initialize test data only used by this test method
+		PageReference testPage = Page.ArlPag{{ base_name }};
+		Test.setCurrentPage(testPage);
 		Test.startTest();
 		// TODO implement test logic
 		Test.stopTest();
