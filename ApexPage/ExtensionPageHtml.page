@@ -1,0 +1,32 @@
+<!--
+/**
+* @file {{ api_name }}.page
+* @author Arlanis/{{ creating_user }}
+* @reviewedby Arlanis/xxx/yyyy-mm-dd
+* @copyright Arlanis Reply AG
+* @date {{ release_date }}
+* @subject Visualforce Page {{ api_name }}
+* @description TODO
+* 
+* Change History:
+* |    Date          |    Company/Person        |    Description/Reason                             |   Requirement   |
+* |––––––––––––––––––|––––––––––––––––––––––––––|–––––––––––––––––––––––––––––––––––––––––––––––––––|–––––––––––––––––|
+* |    {{ release_date }}    |    Arlanis/{{ creating_user }}           |    initial release                                |                 |
+**/
+-->
+
+<apex:page id="page" docType="html-5.0" standardController="{{ object_name }}" extensions="ArlCtr{{ base_name }}" 
+		title="{{ api_name }}" cache="true" applyHtmlTag="false" applyBodyTag="false" standardStylesheets="false" 
+		sidebar="false" showHeader="false">
+<html>
+	<head>
+		<!-- TODO -->
+	</head>
+	<body>
+		<apex:form id="form">
+			<apex:pageMessages />
+			<!-- TODO -->
+		</apex:form>
+	</body>
+</html>
+</apex:page>

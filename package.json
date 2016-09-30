@@ -1,0 +1,894 @@
+{
+	"ApexClass" : [
+		{
+			"name" : "Batch Class",
+			"file_name" : "BatchClass.cls",
+			"description" : "A schedulable batch class",
+			"author" : "Arlanis Reply AG",
+			"params" : [
+				{
+					"name" : "api_name",
+					"description" : "Class API Name",
+					"default" : "ArlBatMyClass"
+				},
+				{
+					"name" : "base_name",
+					"description" : "Class Base Name",
+					"default" : "MyClass"
+				},
+				{
+					"name" : "object_name",
+					"description" : "Object for Batching",
+					"default" : "MyObject__c"
+				},
+				{
+					"name" : "creating_user",
+					"description" : "User Initials",
+					"default" : "xxx"
+				},
+				{
+					"name" : "release_date",
+					"description" : "Release Date",
+					"default" : "yyyy-mm-dd"
+				}
+			]
+		},
+		{
+			"name" : "Controller Class",
+			"file_name" : "ControllerClass.cls",
+			"description" : "A Visualforce controller class",
+			"author" : "Arlanis Reply AG",
+			"params" : [
+				{
+					"name" : "api_name",
+					"description" : "Class API Name",
+					"default" : "ArlCtrMyPage"
+				},
+				{
+					"name" : "base_name",
+					"description" : "Class Base Name",
+					"default" : "MyPage"
+				},
+				{
+					"name" : "creating_user",
+					"description" : "User Initials",
+					"default" : "xxx"
+				},
+				{
+					"name" : "release_date",
+					"description" : "Release Date",
+					"default" : "yyyy-mm-dd"
+				}
+			]
+		},
+		{
+			"name" : "Controller Extension Class",
+			"file_name" : "ControllerExtensionClass.cls",
+			"description" : "A Visualforce controller extension class",
+			"author" : "Arlanis Reply AG",
+			"params" : [
+				{
+					"name" : "api_name",
+					"description" : "Class API Name",
+					"default" : "ArlCtrMyPage"
+				},
+				{
+					"name" : "base_name",
+					"description" : "Class Base Name",
+					"default" : "MyPage"
+				},
+				{
+					"name" : "object_name",
+					"description" : "Controller Object",
+					"default" : "MyObject__c"
+				},
+				{
+					"name" : "creating_user",
+					"description" : "User Initials",
+					"default" : "xxx"
+				},
+				{
+					"name" : "release_date",
+					"description" : "Release Date",
+					"default" : "yyyy-mm-dd"
+				}
+			]
+		},
+		{
+			"name" : "Controller Set Extension Class",
+			"file_name" : "ControllerSetExtensionClass.cls",
+			"description" : "A Visualforce controller extension class using StandardSetController",
+			"author" : "Arlanis Reply AG",
+			"params" : [
+				{
+					"name" : "api_name",
+					"description" : "Class API Name",
+					"default" : "ArlCtrMyPage"
+				},
+				{
+					"name" : "base_name",
+					"description" : "Class Base Name",
+					"default" : "MyPage"
+				},
+				{
+					"name" : "object_name",
+					"description" : "Set Controller Object",
+					"default" : "MyObject__c"
+				},
+				{
+					"name" : "creating_user",
+					"description" : "User Initials",
+					"default" : "xxx"
+				},
+				{
+					"name" : "release_date",
+					"description" : "Release Date",
+					"default" : "yyyy-mm-dd"
+				}
+			]
+		},
+		{
+			"name" : "Custom Class",
+			"file_name" : "CustomClass.cls",
+			"description" : "A standard class with no specific properties",
+			"author" : "Arlanis Reply AG",
+			"params" : [
+				{
+					"name" : "api_name",
+					"description" : "Class API Name",
+					"default" : "ArlClsMyClass"
+				},
+				{
+					"name" : "base_name",
+					"description" : "Class Base Name",
+					"default" : "MyClass"
+				},
+				{
+					"name" : "creating_user",
+					"description" : "User Initials",
+					"default" : "xxx"
+				},
+				{
+					"name" : "release_date",
+					"description" : "Release Date",
+					"default" : "yyyy-mm-dd"
+				}
+			]
+		},
+		{
+			"name" : "Enum Class",
+			"file_name" : "EnumClass.cls",
+			"description" : "An enum with no specific properties",
+			"author" : "Arlanis Reply AG",
+			"params" : [
+				{
+					"name" : "api_name",
+					"description" : "Enum API Name",
+					"default" : "ArlEnmMyEnum"
+				},
+				{
+					"name" : "base_name",
+					"description" : "Enum Base Name",
+					"default" : "MyEnum"
+				},
+				{
+					"name" : "creating_user",
+					"description" : "User Initials",
+					"default" : "xxx"
+				},
+				{
+					"name" : "release_date",
+					"description" : "Release Date",
+					"default" : "yyyy-mm-dd"
+				}
+			]
+		},
+		{
+			"name" : "Interface",
+			"file_name" : "Interface.cls",
+			"description" : "An interface with no specific properties",
+			"author" : "Arlanis Reply AG",
+			"params" : [
+				{
+					"name" : "api_name",
+					"description" : "Interface API Name",
+					"default" : "ArlIfcMyInterface"
+				},
+				{
+					"name" : "base_name",
+					"description" : "Interface Base Name",
+					"default" : "MyInterface"
+				},
+				{
+					"name" : "creating_user",
+					"description" : "User Initials",
+					"default" : "xxx"
+				},
+				{
+					"name" : "release_date",
+					"description" : "Release Date",
+					"default" : "yyyy-mm-dd"
+				}
+			]
+		},
+		{
+			"name" : "Trigger Handler",
+			"file_name" : "TriggerHandler.cls",
+			"description" : "A trigger handler",
+			"author" : "Arlanis Reply AG",
+			"params" : [
+				{
+					"name" : "api_name",
+					"description" : "Class API Name",
+					"default" : "ArlTrhMyObject_c"
+				},
+				{
+					"name" : "base_name",
+					"description" : "Class Base Name",
+					"default" : "MyObject_c"
+				},
+				{
+					"name" : "object_name",
+					"description" : "Triggered Object",
+					"default" : "MyObject__c"
+				},
+				{
+					"name" : "creating_user",
+					"description" : "User Initials",
+					"default" : "xxx"
+				},
+				{
+					"name" : "release_date",
+					"description" : "Release Date",
+					"default" : "yyyy-mm-dd"
+				}
+			]
+		},
+		{
+			"name" : "Batch Apex Unit Test",
+			"file_name" : "UnitTestBatch.cls",
+			"description" : "A unit test template for batch Apex classes",
+			"author" : "Arlanis Reply AG",
+			"params" : [
+				{
+					"name" : "class_prefix",
+					"description" : "Original Class Prefix",
+					"default" : "ArlBat"
+				},
+				{
+					"name" : "api_name",
+					"description" : "Class API Name",
+					"default" : "ArlTBaMyClass"
+				},
+				{
+					"name" : "base_name",
+					"description" : "Class Base Name",
+					"default" : "MyClass"
+				},
+				{
+					"name" : "factory_name",
+					"description" : "Data Factory Class",
+					"default" : "ArlClsUnitTestDataFactory"
+				},
+				{
+					"name" : "creating_user",
+					"description" : "User Initials",
+					"default" : "xxx"
+				},
+				{
+					"name" : "release_date",
+					"description" : "Release Date",
+					"default" : "yyyy-mm-dd"
+				}
+			]
+		},
+		{
+			"name" : "Controller Unit Test",
+			"file_name" : "UnitTest.cls",
+			"description" : "A unit test template for VIsualforce controllers",
+			"author" : "Arlanis Reply AG",
+			"params" : [
+				{
+					"name" : "class_prefix",
+					"description" : "Original Class Prefix",
+					"default" : "ArlCtr"
+				},
+				{
+					"name" : "api_name",
+					"description" : "Class API Name",
+					"default" : "ArlTCtMyPage"
+				},
+				{
+					"name" : "base_name",
+					"description" : "Class Base Name",
+					"default" : "MyPage"
+				},
+				{
+					"name" : "factory_name",
+					"description" : "Data Factory Class",
+					"default" : "ArlClsUnitTestDataFactory"
+				},
+				{
+					"name" : "creating_user",
+					"description" : "User Initials",
+					"default" : "xxx"
+				},
+				{
+					"name" : "release_date",
+					"description" : "Release Date",
+					"default" : "yyyy-mm-dd"
+				}
+			]
+		},
+		{
+			"name" : "Unit Test",
+			"file_name" : "UnitTest.cls",
+			"description" : "A class for implementing unit tests",
+			"author" : "Arlanis Reply AG",
+			"params" : [
+				{
+					"name" : "class_prefix",
+					"description" : "Original Class Prefix",
+					"default" : "ArlCls"
+				},
+				{
+					"name" : "api_name",
+					"description" : "Class API Name",
+					"default" : "ArlTClMyClass"
+				},
+				{
+					"name" : "base_name",
+					"description" : "Class Base Name",
+					"default" : "MyClass"
+				},
+				{
+					"name" : "factory_name",
+					"description" : "Data Factory Class",
+					"default" : "ArlClsUnitTestDataFactory"
+				},
+				{
+					"name" : "creating_user",
+					"description" : "User Initials",
+					"default" : "xxx"
+				},
+				{
+					"name" : "release_date",
+					"description" : "Release Date",
+					"default" : "yyyy-mm-dd"
+				}
+			]
+		},
+		{
+			"name" : "Trigger Unit Test",
+			"file_name" : "UnitTest.cls",
+			"description" : "A unit test template for triggers",
+			"author" : "Arlanis Reply AG",
+			"params" : [
+				{
+					"name" : "class_prefix",
+					"description" : "Original Class Prefix",
+					"default" : "ArlTrh"
+				},
+				{
+					"name" : "api_name",
+					"description" : "Class API Name",
+					"default" : "ArlTTrMyObject_c"
+				},
+				{
+					"name" : "base_name",
+					"description" : "Class Base Name",
+					"default" : "MyObject_c"
+				},
+				{
+					"name" : "factory_name",
+					"description" : "Data Factory Class",
+					"default" : "ArlClsUnitTestDataFactory"
+				},
+				{
+					"name" : "creating_user",
+					"description" : "User Initials",
+					"default" : "xxx"
+				},
+				{
+					"name" : "release_date",
+					"description" : "Release Date",
+					"default" : "yyyy-mm-dd"
+				}
+			]
+		},
+		{
+			"name" : "Unit Test Data Factory",
+			"file_name" : "UnitTestDataFactory.cls",
+			"description" : "A data factory class for unit tests",
+			"author" : "Arlanis Reply AG",
+			"params" : [
+				{
+					"name" : "api_name",
+					"description" : "Class API Name",
+					"default" : "ArlClsUnitTestDataFactory"
+				},
+				{
+					"name" : "base_name",
+					"description" : "Class Base Name",
+					"default" : "UnitTestDataFactory"
+				},
+				{
+					"name" : "creating_user",
+					"description" : "User Initials",
+					"default" : "xxx"
+				},
+				{
+					"name" : "release_date",
+					"description" : "Release Date",
+					"default" : "yyyy-mm-dd"
+				}
+			]
+		},
+		{
+			"name" : "Web Service REST Callout",
+			"file_name" : "WebserviceOutRest.cls",
+			"description" : "A class for implementing a REST web service",
+			"author" : "Arlanis Reply AG",
+			"params" : [
+				{
+					"name" : "api_name",
+					"description" : "Class API Name",
+					"default" : "ArlClsWsOutMyClass"
+				},
+				{
+					"name" : "base_name",
+					"description" : "Class Base Name",
+					"default" : "WsOutMyClass"
+				},
+				{
+					"name" : "creating_user",
+					"description" : "User Initials",
+					"default" : "xxx"
+				},
+				{
+					"name" : "release_date",
+					"description" : "Release Date",
+					"default" : "yyyy-mm-dd"
+				}
+			]
+		},
+		{
+			"name" : "Web Service SOAP Callout",
+			"file_name" : "WebserviceOutSoap.cls",
+			"description" : "A class for implementing a SOAP web service",
+			"author" : "Arlanis Reply AG",
+			"params" : [
+				{
+					"name" : "api_name",
+					"description" : "Class API Name",
+					"default" : "ArlClsWsOutMyClass"
+				},
+				{
+					"name" : "base_name",
+					"description" : "Class Base Name",
+					"default" : "WsOutMyClass"
+				},
+				{
+					"name" : "creating_user",
+					"description" : "User Initials",
+					"default" : "xxx"
+				},
+				{
+					"name" : "release_date",
+					"description" : "Release Date",
+					"default" : "yyyy-mm-dd"
+				}
+			]
+		},
+		{
+			"name" : "Web Service REST Callout Mock Class",
+			"file_name" : "WebserviceOutMockRest.cls",
+			"description" : "A class for implementing a REST web service mock",
+			"author" : "Arlanis Reply AG",
+			"params" : [
+				{
+					"name" : "class_prefix",
+					"description" : "Original Class Prefix",
+					"default" : "ArlCls"
+				},
+				{
+					"name" : "api_name",
+					"description" : "Class API Name",
+					"default" : "ArlMckWsOutMyClass"
+				},
+				{
+					"name" : "base_name",
+					"description" : "Class Base Name",
+					"default" : "WsOutMyClass"
+				},
+				{
+					"name" : "creating_user",
+					"description" : "User Initials",
+					"default" : "xxx"
+				},
+				{
+					"name" : "release_date",
+					"description" : "Release Date",
+					"default" : "yyyy-mm-dd"
+				}
+			]
+		},
+		{
+			"name" : "Web Service SOAP Callout Mock Class",
+			"file_name" : "WebserviceOutMockSoap.cls",
+			"description" : "A class for implementing a SOAP web service mock",
+			"author" : "Arlanis Reply AG",
+			"params" : [
+				{
+					"name" : "class_prefix",
+					"description" : "Original Class Prefix",
+					"default" : "ArlCls"
+				},
+				{
+					"name" : "api_name",
+					"description" : "Class API Name",
+					"default" : "ArlMckWsOutMyClass"
+				},
+				{
+					"name" : "base_name",
+					"description" : "Class Base Name",
+					"default" : "WsOutMyClass"
+				},
+				{
+					"name" : "creating_user",
+					"description" : "User Initials",
+					"default" : "xxx"
+				},
+				{
+					"name" : "release_date",
+					"description" : "Release Date",
+					"default" : "yyyy-mm-dd"
+				}
+			]
+		},
+		{
+			"name" : "Web Service REST Inbound Class",
+			"file_name" : "WebserviceInRest.cls",
+			"description" : "A class for providing a REST web service",
+			"author" : "Arlanis Reply AG",
+			"params" : [
+				{
+					"name" : "api_name",
+					"description" : "Class API Name",
+					"default" : "ArlClsWsInMyClass"
+				},
+				{
+					"name" : "base_name",
+					"description" : "Class Base Name",
+					"default" : "WsInMyClass"
+				},
+				{
+					"name" : "creating_user",
+					"description" : "User Initials",
+					"default" : "xxx"
+				},
+				{
+					"name" : "release_date",
+					"description" : "Release Date",
+					"default" : "yyyy-mm-dd"
+				}
+			]
+		},
+		{
+			"name" : "Web Service SOAP Inbound Class",
+			"file_name" : "WebserviceInSoap.cls",
+			"description" : "A class for providing a SOAP web service",
+			"author" : "Arlanis Reply AG",
+			"params" : [
+				{
+					"name" : "api_name",
+					"description" : "Class API Name",
+					"default" : "ArlClsWsInMyClass"
+				},
+				{
+					"name" : "base_name",
+					"description" : "Class Base Name",
+					"default" : "WsInMyClass"
+				},
+				{
+					"name" : "creating_user",
+					"description" : "User Initials",
+					"default" : "xxx"
+				},
+				{
+					"name" : "release_date",
+					"description" : "Release Date",
+					"default" : "yyyy-mm-dd"
+				}
+			]
+		}
+	],
+	"ApexComponent" : [
+		{
+			"name" : "Default Component",
+			"file_name" : "DefaultComponent.component",
+			"description" : "A Visualforce Component",
+			"author" : "Arlanis Reply AG",
+			"params" : [
+				{
+					"name" : "api_name",
+					"description" : "Component API Name",
+					"default" : "ArlCmpMyComponent"
+				},
+				{
+					"name" : "base_name",
+					"description" : "Component Base Name",
+					"default" : "MyComponent"
+				},
+				{
+					"name" : "creating_user",
+					"description" : "User Initials",
+					"default" : "xxx"
+				},
+				{
+					"name" : "release_date",
+					"description" : "Release Date",
+					"default" : "yyyy-mm-dd"
+				}
+			]
+		}
+	],
+	"ApexPage" : [
+		{
+			"name" : "Default Page",
+			"file_name" : "DefaultPage.page",
+			"description" : "A Visualforce Page",
+			"author" : "Arlanis Reply AG",
+			"params" : [
+				{
+					"name" : "api_name",
+					"description" : "Page API Name",
+					"default" : "ArlPagMyPage"
+				},
+				{
+					"name" : "base_name",
+					"description" : "Page Base Name",
+					"default" : "MyPage"
+				},
+				{
+					"name" : "creating_user",
+					"description" : "User Initials",
+					"default" : "xxx"
+				},
+				{
+					"name" : "release_date",
+					"description" : "Release Date",
+					"default" : "yyyy-mm-dd"
+				}
+			]
+		},
+		{
+			"name" : "Default Page (HTML)",
+			"file_name" : "DefaultPageHtml.page",
+			"description" : "A Visualforce Page with custom HTML",
+			"author" : "Arlanis Reply AG",
+			"params" : [
+				{
+					"name" : "api_name",
+					"description" : "Page API Name",
+					"default" : "ArlPagMyPage"
+				},
+				{
+					"name" : "base_name",
+					"description" : "Page Base Name",
+					"default" : "MyPage"
+				},
+				{
+					"name" : "creating_user",
+					"description" : "User Initials",
+					"default" : "xxx"
+				},
+				{
+					"name" : "release_date",
+					"description" : "Release Date",
+					"default" : "yyyy-mm-dd"
+				}
+			]
+		},
+		{
+			"name" : "Page with Extension",
+			"file_name" : "ExtensionPage.page",
+			"description" : "A Visualforce page with controller extension",
+			"author" : "Arlanis Reply AG",
+			"params" : [
+				{
+					"name" : "api_name",
+					"description" : "Page API Name",
+					"default" : "ArlPagMyPage"
+				},
+				{
+					"name" : "base_name",
+					"description" : "Page Base Name",
+					"default" : "MyPage"
+				},
+				{
+					"name" : "object_name",
+					"description" : "Controller Object",
+					"default" : "MyObject__c"
+				},
+				{
+					"name" : "creating_user",
+					"description" : "User Initials",
+					"default" : "xxx"
+				},
+				{
+					"name" : "release_date",
+					"description" : "Release Date",
+					"default" : "yyyy-mm-dd"
+				}
+			]
+		},
+		{
+			"name" : "Page with Extension (HTML)",
+			"file_name" : "ExtensionPageHtml.page",
+			"description" : "A Visualforce page with controller extension and custom HTML",
+			"author" : "Arlanis Reply AG",
+			"params" : [
+				{
+					"name" : "api_name",
+					"description" : "Page API Name",
+					"default" : "ArlPagMyPage"
+				},
+				{
+					"name" : "base_name",
+					"description" : "Page Base Name",
+					"default" : "MyPage"
+				},
+				{
+					"name" : "object_name",
+					"description" : "Controller Object",
+					"default" : "MyObject__c"
+				},
+				{
+					"name" : "creating_user",
+					"description" : "User Initials",
+					"default" : "xxx"
+				},
+				{
+					"name" : "release_date",
+					"description" : "Release Date",
+					"default" : "yyyy-mm-dd"
+				}
+			]
+		},
+		{
+			"name" : "Page with Set Extension",
+			"file_name" : "SetExtensionPage.page",
+			"description" : "A Visualforce page with set controller extension",
+			"author" : "Arlanis Reply AG",
+			"params" : [
+				{
+					"name" : "api_name",
+					"description" : "Page API Name",
+					"default" : "ArlPagMyPage"
+				},
+				{
+					"name" : "base_name",
+					"description" : "Page Base Name",
+					"default" : "MyPage"
+				},
+				{
+					"name" : "object_name",
+					"description" : "Set Controller Object",
+					"default" : "MyObject__c"
+				},
+				{
+					"name" : "creating_user",
+					"description" : "User Initials",
+					"default" : "xxx"
+				},
+				{
+					"name" : "release_date",
+					"description" : "Release Date",
+					"default" : "yyyy-mm-dd"
+				}
+			]
+		},
+		{
+			"name" : "Page with Set Extension (HTML)",
+			"file_name" : "SetExtensionPageHtml.page",
+			"description" : "A Visualforce page with set controller extension and custom HTML",
+			"author" : "Arlanis Reply AG",
+			"params" : [
+				{
+					"name" : "api_name",
+					"description" : "Page API Name",
+					"default" : "ArlPagMyPage"
+				},
+				{
+					"name" : "base_name",
+					"description" : "Page Base Name",
+					"default" : "MyPage"
+				},
+				{
+					"name" : "object_name",
+					"description" : "Set Controller Object",
+					"default" : "MyObject__c"
+				},
+				{
+					"name" : "creating_user",
+					"description" : "User Initials",
+					"default" : "xxx"
+				},
+				{
+					"name" : "release_date",
+					"description" : "Release Date",
+					"default" : "yyyy-mm-dd"
+				}
+			]
+		}
+	],
+	"ApexTrigger" : [
+		{
+			"name" : "Dummy",
+			"file_name" : "DummyTrigger.trigger",
+			"description" : "A trigger for a SObject",
+			"author" : "Arlanis Reply AG",
+			"params" : [
+				{
+					"name" : "api_name",
+					"description" : "Trigger API Name",
+					"default" : "ArlTriMyObject_c"
+				},
+				{
+					"name" : "base_name",
+					"description" : "Trigger Base Name",
+					"default" : "MyObject_c"
+				},
+				{
+					"name" : "object_name",
+					"description" : "Triggered Object",
+					"default" : "MyObject__c"
+				},
+				{
+					"name" : "creating_user",
+					"description" : "User Initials",
+					"default" : "xxx"
+				},
+				{
+					"name" : "release_date",
+					"description" : "Release Date",
+					"default" : "yyyy-mm-dd"
+				}
+			]
+		},
+		{
+			"name" : "Trigger",
+			"file_name" : "Trigger.trigger",
+			"description" : "A trigger for a SObject",
+			"author" : "Arlanis Reply AG",
+			"params" : [
+				{
+					"name" : "api_name",
+					"description" : "Trigger API Name",
+					"default" : "ArlTriMyObject_c"
+				},
+				{
+					"name" : "base_name",
+					"description" : "Trigger Base Name",
+					"default" : "MyObject_c"
+				},
+				{
+					"name" : "object_name",
+					"description" : "Triggered Object",
+					"default" : "MyObject__c"
+				},
+				{
+					"name" : "creating_user",
+					"description" : "User Initials",
+					"default" : "xxx"
+				},
+				{
+					"name" : "release_date",
+					"description" : "Release Date",
+					"default" : "yyyy-mm-dd"
+				}
+			]
+		}
+	]
+}
