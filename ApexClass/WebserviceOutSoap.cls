@@ -68,7 +68,7 @@ public class {{ api_name }} {
 	
 	private OutputWrapper performCalloutInternal(InputWrapper input) {
 		if (input == null) {
-			return new OutputWrapper(null);
+			return new OutputWrapper();
 		}
 		// TODO invoke stub method using parameters from input
 		// TODO create output from web service response and return the value

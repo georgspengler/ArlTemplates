@@ -94,7 +94,7 @@ public class {{ api_name }} {
 	
 	private OutputWrapper performCalloutInternal(InputWrapper input) {
 		if (input == null) {
-			return new OutputWrapper(null);
+			return new OutputWrapper();
 		}
 		input.fillHttpRequest(request);
 		return new OutputWrapper(connection.send(request));
