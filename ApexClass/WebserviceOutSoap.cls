@@ -67,7 +67,7 @@ public class {{ api_name }} {
 	
 	
 	private OutputWrapper performCalloutInternal(InputWrapper input) {
-		if (inRec == null) {
+		if (input == null) {
 			return new OutputWrapper(null);
 		}
 		// TODO invoke stub method using parameters from input
