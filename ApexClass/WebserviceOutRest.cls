@@ -39,6 +39,11 @@ public class {{ api_name }} {
 		public Integer status {get; private set;}
 		public Boolean isSuccess {get; private set;}
 		// TODO
+		public OutputWrapper() {
+			this.rawResponse = null;
+			this.status = 500;
+			this.isSuccess = false;
+		}
 		public OutputWrapper(HttpResponse rawResponse) {
 			this.rawResponse = rawResponse;
 			if (rawResponse != null) {
