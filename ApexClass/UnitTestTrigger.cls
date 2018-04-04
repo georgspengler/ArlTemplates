@@ -29,7 +29,7 @@ private class {{ api_name }} {
 	static void test_{{ class_prefix }}{{ base_name }}() {
 		ArlUtd{{ base_name }}.{{ base_name }}Wrapper testWrapper = null; // ArlUtd{{ base_name }}.<ChildType>{{ base_name }}Wrapper.get<ChildType>{{ base_name }}Wrapper(true, 0);
 		// TODO initialize test data only used by this test method
-		{{ object_name }} testObj = testWrapper.getSObject();
+		{{ object_name }} testObj = ({{ object_name }}) testWrapper.getSObject();
 		Test.startTest();
 		insert testObj;
 		update testObj;
