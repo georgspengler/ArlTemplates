@@ -6,7 +6,6 @@
 * @date {{ release_date }}
 * {{metadataDependencies}}
 * @subject Unit test data factory class {{ api_name }} for {{ object_name }}
-* @description TODO
 * 
 * Change History:
 * |  Date        | Company / Person           |  Description/Reason                                      |  Requirement  |

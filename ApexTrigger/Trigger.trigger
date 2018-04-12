@@ -19,8 +19,21 @@ trigger {{ api_name }} on {{ object_name }} (before insert, before update, befor
 	
 	// if the "ArlanisHelpers" package is installed in the current org, remove the comment from the following block of code
 	/*
+	// the following code block must not be disabled
+	if (trigger.isAfter) {
+		if (trigger.isInsert) {
+			ArlanisReply.ObjectHistory.trackInsert(trigger.new);
+		} else if (trigger.isUpdate) {
+			ArlanisReply.ObjectHistory.trackUpdate(trigger.old, trigger.new);
+		} else if (trigger.isDelete) {
+			ArlanisReply.ObjectHistory.trackDelete(trigger.old);
+		} else {
+			ArlanisReply.ObjectHistory.trackUndelete(trigger.new);
+		}
+	}
+	
 	if (!Test.isRunningTest()) {
-		if (arlanis.TriggerSettingsEvaluator.isTriggerDisabled(null, Schema.SObjectType.{{ object_name }}, (trigger.new != null ? trigger.new : trigger.old))) {
+		if (ArlanisReply.TriggerSettingsEvaluator.isTriggerDisabled({{ object_name }}.sObjectType, (trigger.new != null ? trigger.new : trigger.old))) {
 			return;
 		}
 	}

@@ -5,7 +5,6 @@
 * @copyright Arlanis Reply AG
 * @date {{ release_date }}
 * @subject Unit test for class {{ class_prefix }}{{ base_name }}
-* @description TODO
 * 
 * Change History:
 * |    Date          |    Company/Person        |    Description/Reason                             |    Requirement    |
